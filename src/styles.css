@@ -1,0 +1,329 @@
+#mockito-1 {
+    color: #79a641;
+    font-weight: bold;
+}
+
+#mockito-2 {
+    color: #000000;
+    font-weight: bold;
+}
+
+.card{
+    width: 50% !important;
+}
+
+.bodyApp{
+    padding-bottom: 5rem !important;
+}
+
+.title {
+    padding-top: 2rem;
+}
+
+.p-4-new {
+    padding-top: 1.5rem !important;
+    padding-bottom: 0rem !important;
+    padding-left: 1.5rem !important;
+    padding-right: 1.5rem !important;
+}
+
+.icon-align {
+    text-align: center;
+}
+
+.icon-text {
+    text-align: center;
+}
+
+.contact-data {
+    padding-bottom: 0.5rem;
+}
+
+.navbar-toggler-icon{
+    filter: invert(100%);
+}
+
+.navbar-light .navbar-toggler{
+    color: #9b9d9e !important;
+}
+
+.switch-container {
+    text-align: center !important;
+    padding-top: 1.5rem;
+}
+
+.switch .switch-group .switch-on,
+.switch .switch-group .switch-off,
+.btn .btn-primary {
+    font-size: 20px !important;
+    font-weight: bold !important;
+    padding-top: 1rem;
+}
+
+.switch .btn-light {
+    width: 20% !important;
+}
+
+.switch .switch-group .switch-off,
+.btn .btn-primary {
+    background-color: #ffffff !important;
+    color: #0d6efd !important;
+}
+
+.switch .switch-group .switch-on,
+.btn .btn-warning {
+    border-color: #dc3545 !important;
+    border-width: 2px;
+}
+
+.btn-light {
+    background-color: #dc3545 !important;
+    border-color: #842029 !important;
+}
+
+.justify-content-between{
+    text-align: justify !important;
+}
+
+.description {
+    text-align: justify !important;
+}
+
+.description-container {
+    padding-top: 3rem !important;
+}
+
+.profile-photo{
+    height: 10rem;
+    width: 10rem;
+    transition: box-shadow 0.3s ease; 
+}
+
+.profile-photo:hover {
+    box-shadow: 0 0 50px 2px rgba(8, 93, 143, 0.8); /* Sombra al pasar el cursor por encima */
+}
+
+.home-title {
+    transition: text-shadow 0.3s ease; /* Transición para suavizar el efecto */
+}
+  
+.home-title:hover {
+    text-shadow: 5px 5px 10px rgba(113, 219, 245, 0.8); /* Sombra al pasar el cursor por encima */
+}
+
+.margen-p{
+    padding-bottom: 1rem !important;
+}
+
+.job-description{
+    text-align: justify;
+    padding-right: 1rem !important;
+}
+
+.degree{
+    padding-top: 2rem;
+    padding-bottom: 2rem;
+}
+
+.name{
+    padding-top: 1rem;
+    padding-bottom: 1rem;
+}
+
+.skills{
+    padding-top: 1rem;
+    padding-bottom: 1rem;
+}
+
+.list-group-item-action:focus, .list-group-item-action:hover {
+    z-index: 1;
+    color: #ffffff !important;
+    text-decoration: none;
+    background-color: #0eb8b8 !important;
+}
+
+.accordion-button:not(.collapsed) {
+    color: #ffffff !important;
+    background-color: #0eb8b8 !important;
+    box-shadow: inset 0 -1px 0 rgba(0, 0, 0, 0.125);
+}
+
+.accordion-button:focus {
+    border-color: #0eb8b8 !important;
+    border-top-color: rgb(134, 236, 254) !important;
+    border-right-color: rgb(134, 236, 254) !important;
+    border-bottom-color: rgb(134, 236, 254) !important;
+    border-left-color: rgb(134, 236, 254) !important;
+    box-shadow: 0 0 0 0.25rem rgba(134, 236, 254) !important;
+}
+
+.accordion-button:not(.collapsed)::after {
+    filter: hue-rotate(40deg) brightness(500%);
+}
+
+.my-scroll-button {
+    position: fixed;
+    bottom: 20px;
+    right: 20px;
+    border-radius: 50% !important;
+    width: 50px;
+    height: 50px;
+    background-color: #333;
+    border: none;
+    outline: none;
+    cursor: pointer;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+  }
+
+.btn-primary {
+background-color: #000000 !important;
+border-color: #282929 !important;
+}
+
+.btn-primary:focus {
+    box-shadow: 0 0 0 0.25rem rgba(191, 193, 194, 0.5) !important;
+}
+
+.my-scroll-button {
+    display: flex !important;
+    padding: 0rem 0rem !important;
+}
+
+.my-scroll-icon {
+    width: 50px;
+    height: 48px;
+    align-items: center;
+    justify-content: center;
+    font-size: 45px;
+    transform: rotate(180deg);/* Cambia el color de la flecha hacia arriba */
+}
+
+.icon-photo{
+    transition: box-shadow 0.3s ease; 
+}
+
+.icon-photo:hover {
+    box-shadow: 0 0 50px 2px rgba(12, 180, 202, 0.8); /* Sombra al pasar el cursor por encima */
+}
+
+a.link {
+    color: inherit !important;
+    text-decoration: none !important;
+  }
+  
+a.link:hover,
+a.link:focus {
+color: inherit !important;
+text-decoration: none !important;
+}
+
+a.description {
+    color: inherit !important;
+    text-decoration: none !important;
+  }
+  
+a.description:hover,
+a.description:focus {
+color: inherit !important;
+text-decoration: none !important;
+}
+
+/*Desktop*/
+@media (min-width: 768px){
+    .py-md-5{
+        padding-bottom: 0rem !important;
+    }
+    .acordion-div{
+        text-align: center !important;
+        padding-top: 1.5rem;
+        width: 68.5%;
+        padding-left: 31.5% !important;
+    }
+    .acordeon{
+        justify-content: right !important;
+    }
+    .periodo{
+        width: 30rem;
+        text-align: right;
+    }
+    .switch {
+        text-align: center !important;
+        width: 709px;
+        height: 4.5rem;
+    }
+    .my-scroll-button {
+        width: 50px;
+        height: 50px;
+    }
+    .whatsapp-icon {
+        width: 35px;
+        height: 35px;
+        margin-right: 10px;
+        margin-bottom: 5px;
+    }
+    .ubication-icon {
+        width: 30px;
+        height: 30px;
+        margin-right: 10px;
+        margin-bottom: 5px;
+    }
+    .email-icon {
+        width: 30px;
+        height: 30px;
+        margin-right: 10px;
+        margin-bottom: 5px;
+    }
+    .list {
+        width: 709px;
+    }
+}
+
+/*Celular*/
+@media (min-width: 250px) and (max-width: 767px){
+    .acordion-div{
+        padding-top: 1.5rem;
+    }
+    .acordeon{
+        padding-left: 2rem !important;
+        padding-right: 2rem !important;
+    }
+    .switch {
+        text-align: center !important;
+        width: 84%;
+        height: 4.5rem;
+    }
+    .acordeon-container{
+        text-align: center !important;
+        padding-left: 0% !important;
+        padding-right: 0% !important;
+    }
+    .my-scroll-button {
+        width: 40px;
+        height: 40px;
+    }
+    .education-title .justify-content-between {
+        text-align: left !important;
+    }
+    .whatsapp-icon {
+        width: 28px;
+        height: 28px;
+        margin-right: 10px;
+        margin-bottom: 5px;
+    }
+    .ubication-icon {
+        width: 28px;
+        height: 28px;
+        margin-right: 10px;
+        margin-bottom: 5px;
+    }
+    .email-icon {
+        width: 28px;
+        height: 28px;
+        margin-right: 10px;
+    }
+    
+}
+
