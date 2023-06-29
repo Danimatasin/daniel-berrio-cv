@@ -4,10 +4,9 @@ import { ScrollButton } from './components/ScrollButton';
 import { TodoList } from './components/TodoList';
 import 'bootstrap/dist/css/bootstrap.min.css';
 import Accordion from 'react-bootstrap/Accordion';
-import { Card, Col, Container, Row } from 'react-bootstrap';
+import { Col, Container, Row } from 'react-bootstrap';
 import Nav from 'react-bootstrap/Nav';
 import Navbar from 'react-bootstrap/Navbar';
-import NavDropdown from 'react-bootstrap/NavDropdown';
 import BootstrapSwitchButton from 'bootstrap-switch-button-react';
 import profile_photo from '../src/assets/resources/profile_photo.jpeg';
 import sql_logo from '../src/assets/resources/SQLlogo.png';
@@ -58,10 +57,6 @@ export function App(){
 
 
 
-    const handleToggle = () => {
-            setExpanded(!expanded);
-    };
-
     const handleClick = (sectionId) => {
         const section = document.getElementById(sectionId);
           section.scrollIntoView({ behavior: 'instant' }, () => {
@@ -69,8 +64,6 @@ export function App(){
           });
 
         if (window.innerWidth <= 768) {
-            const scrollMargin = 60; // Ajusta este valor según tus necesidades
-            const currentPosition = window.scrollY; // Obtiene la posición actual del scroll vertical
             setTimeout(() => {
                 section.scrollIntoView({ behavior: 'instant' }, () => {
                     // Desplazamiento adicional en dispositivos móviles
@@ -136,17 +129,17 @@ export function App(){
                     <img id="summary" className="d-block mx-auto mb-4 bd-placeholder-img rounded-circle profile-photo" src={profile_photo} alt="" width="72" height="57"></img>
                     <h1 className="display-5 fw-bold text-body-emphasis name">DANIEL ESTEBAN<br/>BERRIO MENDEZ</h1>
                     <div className="contact-data">
-                    <a className="lead mb-4 description"><img src={ubication_icon} className="ubication-icon"></img>Bogotá - Colombia</a>
+                    <a className="lead mb-4 description"><img src={ubication_icon} className="ubication-icon" alt=""></img>Bogotá - Colombia</a>
                     </div>
                     <div className="contact-data">
-                    <a href="https://wa.me/+573132528877" className="lead mb-4 description"><img src={whatsapp_icon} className="whatsapp-icon"></img>+57 313-252-8877</a>
+                    <a href="https://wa.me/+573132528877" className="lead mb-4 description"><img src={whatsapp_icon} className="whatsapp-icon" alt=""></img>+57 313-252-8877</a>
                     </div>
                     <div className="contact-data">
-                        <a href="mailto:deberriom@hotmail.com" className="lead mb-4 description"><img src={email_icon} className="email-icon"></img>deberriom@hotmail.com</a>
+                        <a href="mailto:deberriom@hotmail.com" className="lead mb-4 description"><img src={email_icon} className="email-icon" alt=""></img>deberriom@hotmail.com</a>
                     </div>
                     <h2 className="display-7 text-body-emphasis degree">SOFTWARE DEVELOPMENT ENGINEER</h2>
                     <div className="col-lg-6 mx-auto">
-                    <p className="lead mb-4 description">Software development engineer. Important knowledge in SQL database management, stored procedures. Experience in SPA with frontend in Angular, React, Bootstrap, HTML and CSS, backend in Java with Springboot, API REST, Unit Test with JUnit. SonarQube. Git management and knowledge in accounting and banking processes.</p>
+                    <p className="lead mb-4 description">Software development engineer with 4 years of experience. Full-stack developer. 2 year of experience in frontend in Angular, React.js, HTML and CSS, backend in Java with Spring Boot, API REST, Unit Test with JUnit. SonarQube. Important knowledge in SQL database management, stored procedures. Git management and knowledge in accounting and banking processes.</p>
                     </div>
                 </div>
                     <div className="text-center">
@@ -154,15 +147,6 @@ export function App(){
                     </div>
                     <div className="d-flex flex-column flex-md-row p-4 gap-4 py-md-5 align-items-center justify-content-center">
                         <div className="list-group">
-                        <div className="list-group-item list-group-item-action d-flex gap-3 py-3" aria-current="true">
-                        <img src={sql_logo} alt="twbs" width="32" height="32" className="rounded-circle flex-shrink-0"></img>
-                        <div className="d-flex gap-2 w-100 justify-content-between">
-                            <div>
-                            <h6 className="mb-0">SQL Databases</h6>
-                            <p className="mb-0 opacity-75">SQL Databases Management and Stored Procedures.</p>
-                            </div>
-                        </div>
-                        </div>
                         <div className="list-group-item list-group-item-action d-flex gap-3 py-3" aria-current="true">
                             <img src={js_icon} alt="twbs" width="32" height="32" className="rounded-circle flex-shrink-0"></img>
                             <div className="d-flex gap-2 w-100 justify-content-between">
@@ -184,7 +168,7 @@ export function App(){
                                 <h6 className="mb-0">Java</h6>
                                 <p className="mb-0 opacity-75">An object-oriented programming language, used with {' '}
                                     <img src={springboot_icon} alt="twbs" width="18" height="18" className="rounded-circle flex-shrink-0"></img>
-                                    {' '} Springboot.
+                                    {' '} Spring Boot.
                                 </p>
                                 </div>
                             </div>
@@ -198,6 +182,15 @@ export function App(){
                                 </p>
                                 </div>
                             </div>
+                        </div>
+                        <div className="list-group-item list-group-item-action d-flex gap-3 py-3" aria-current="true">
+                        <img src={sql_logo} alt="twbs" width="32" height="32" className="rounded-circle flex-shrink-0"></img>
+                        <div className="d-flex gap-2 w-100 justify-content-between">
+                            <div>
+                            <h6 className="mb-0">SQL Databases</h6>
+                            <p className="mb-0 opacity-75">SQL Databases Management and Stored Procedures.</p>
+                            </div>
+                        </div>
                         </div>
                         <div className="list-group-item list-group-item-action d-flex gap-3 py-3" aria-current="true">
                             <img src={git_icon} alt="twbs" width="32" height="32" className="rounded-circle flex-shrink-0"></img>
@@ -246,7 +239,7 @@ export function App(){
                                     <div className="d-flex gap-2 w-100 justify-content-between">
                                         <div>
                                         <h6 className="mb-0 margen-p">Software Development Engineer</h6>
-                                        <p className="mb-0 opacity-75 job-description">Management and maintenance of databases in SQL Server. Development of stored procedures. Analysis of implementation of banking processes and maintenance of banking platforms in Java and Javascript.</p>
+                                        <p className="mb-0 opacity-75 job-description">Full-stack web app development with Frontend in JavaScript using React. Improved Look and feel with HTML and CSS. REST API consumption, Java backend support with Spring Boot. Management and maintenance of databases in SQL Server. Analysis of implementation of banking processes and maintenance of platforms.</p>
                                         </div>
                                         <small className="opacity-50 periodo">(Aug 2021 - Jun 2023)</small>
                                     </div>
@@ -258,7 +251,7 @@ export function App(){
                                     <div className="d-flex gap-2 w-100 justify-content-between">
                                         <div>
                                         <h6 className="mb-0 margen-p">Software Developer</h6>
-                                        <p className="mb-0 opacity-75 job-description">Web application development in Angular 8, HTML, CSS, Springboot. Unit tests in JUnit. SQL database management and development of stored procedures.</p>
+                                        <p className="mb-0 opacity-75 job-description">Development of web applications in Angular 8, HTML, CSS, Java support with Springboot. REST API consumption. Unit tests in JUnit. SQL database management and development of stored procedures.</p>
                                         </div>
                                         <small className="opacity-50 periodo">(Oct 2020 - Aug 2021)</small>
                                     </div>
@@ -270,7 +263,7 @@ export function App(){
                                     <div className="d-flex gap-2 w-100 justify-content-between">
                                         <div>
                                         <h6 className="mb-0 margen-p">Process Manager</h6>
-                                        <p className="mb-0 opacity-75 job-description">Scripts creation for data capture. Statistical processing and analysis in SPSS. High proficiency in Excel for streamlining processes.</p>
+                                        <p className="mb-0 opacity-75 job-description">Scripts creation for data capture. Website design with HTML, CSS and Bootstrap. Statistical processing and analysis in SPSS.</p>
                                         </div>
                                         <small className="opacity-50 periodo">(Sep 2016 - Nov 2019)</small>
                                     </div>
@@ -337,7 +330,7 @@ export function App(){
         </Col>
         <Col xs={4} md={4} className="d-flex flex-column align-items-center" href="">
         <a href="https://daniel-berrio-cv-1c312f82bb8d.herokuapp.com/" className="text-decoration-none icon-align link">
-          <img src={cv_icon} alt="Icono 3" width="60px" height="60px" className="rounded-circle icon-photo" />
+          <img src={cv_icon} alt="Web Page" width="60px" height="60px" className="rounded-circle icon-photo" />
           <p className="lead mb-4 icon-text my-2">CV</p>
         </a>
         </Col>
