@@ -336,7 +336,7 @@ export function App(){
         </a>
         </Col>
         <Col xs={4} md={4} className="d-flex flex-column align-items-center" href="">
-        <a href="https://www.linkedin.com/in/deberriom/" className="text-decoration-none icon-align link">
+        <a href="https://daniel-berrio-cv-1c312f82bb8d.herokuapp.com/" className="text-decoration-none icon-align link">
           <img src={cv_icon} alt="Icono 3" width="60px" height="60px" className="rounded-circle icon-photo" />
           <p className="lead mb-4 icon-text my-2">CV</p>
         </a>
