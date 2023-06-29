@@ -127,9 +127,9 @@ export function App(){
 
                 <div className="px-4 my-2 description-container text-center">
                     <img id="summary" className="d-block mx-auto mb-4 bd-placeholder-img rounded-circle profile-photo" src={profile_photo} alt="" width="72" height="57"></img>
-                    <h1 className="display-5 fw-bold text-body-emphasis name">DANIEL ESTEBAN<br/>BERRIO MENDEZ</h1>
+                    <h1 className="display-5 fw-bold text-body-emphasis name no-select">DANIEL ESTEBAN<br/>BERRIO MENDEZ</h1>
                     <div className="contact-data">
-                    <a className="lead mb-4 description"><img src={ubication_icon} className="ubication-icon" alt=""></img>Bogotá - Colombia</a>
+                    <a className="lead mb-4 description"><img src={ubication_icon} className="ubication-icon no-select" alt=""></img>Bogotá - Colombia</a>
                     </div>
                     <div className="contact-data">
                     <a href="https://wa.me/+573132528877" className="lead mb-4 description"><img src={whatsapp_icon} className="whatsapp-icon" alt=""></img>+57 313-252-8877</a>
@@ -137,19 +137,19 @@ export function App(){
                     <div className="contact-data">
                         <a href="mailto:deberriom@hotmail.com" className="lead mb-4 description"><img src={email_icon} className="email-icon" alt=""></img>deberriom@hotmail.com</a>
                     </div>
-                    <h2 className="display-7 text-body-emphasis degree">SOFTWARE DEVELOPMENT ENGINEER</h2>
+                    <h2 className="display-7 text-body-emphasis degree no-select">SOFTWARE DEVELOPMENT ENGINEER</h2>
                     <div className="col-lg-6 mx-auto">
-                    <p className="lead mb-4 description">Software development engineer with 4 years of experience. Full-stack developer. 2 year of experience in frontend in Angular, React.js, HTML and CSS, backend in Java with Spring Boot, API REST, Unit Test with JUnit. SonarQube. Important knowledge in SQL database management, stored procedures. Git management and knowledge in accounting and banking processes.</p>
+                    <p className="lead mb-4 description no-select">Software development engineer with 4 years of experience. Full-stack developer. 2 year of experience in frontend in Angular, React.js, HTML and CSS, backend in Java with Spring Boot, API REST, Unit Test with JUnit. SonarQube. Important knowledge in SQL database management, stored procedures. Git management and knowledge in accounting and banking processes.</p>
                     </div>
                 </div>
                     <div className="text-center">
-                        <h1 id="skills" className="display-6 fw-bold text-body-emphasis">SKILLS</h1>
+                        <h1 id="skills" className="display-6 fw-bold text-body-emphasis no-select">SKILLS</h1>
                     </div>
                     <div className="d-flex flex-column flex-md-row p-4 gap-4 py-md-5 align-items-center justify-content-center">
                         <div className="list-group">
                         <div className="list-group-item list-group-item-action d-flex gap-3 py-3" aria-current="true">
                             <img src={js_icon} alt="twbs" width="32" height="32" className="rounded-circle flex-shrink-0"></img>
-                            <div className="d-flex gap-2 w-100 justify-content-between">
+                            <div className="d-flex gap-2 w-100 justify-content-between no-select">
                                 <div>
                                 <h6 className="mb-0">JavaScript</h6>
                                 <p className="mb-0 opacity-75">Versatile programming language for web development, used in {' '}

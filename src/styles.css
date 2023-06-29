@@ -103,6 +103,10 @@
     box-shadow: 0 0 50px 2px rgba(8, 93, 143, 0.8); /* Sombra al pasar el cursor por encima */
 }
 
+.no-select{
+    user-select: none;
+}
+
 .home-title {
     transition: text-shadow 0.3s ease; /* Transición para suavizar el efecto */
     user-select: none;
