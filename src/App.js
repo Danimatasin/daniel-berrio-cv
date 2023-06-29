@@ -129,7 +129,7 @@ export function App(){
                     <img id="summary" className="d-block mx-auto mb-4 bd-placeholder-img rounded-circle profile-photo" src={profile_photo} alt="" width="72" height="57"></img>
                     <h1 className="display-5 fw-bold text-body-emphasis name no-select">DANIEL ESTEBAN<br/>BERRIO MENDEZ</h1>
                     <div className="contact-data">
-                    <a className="lead mb-4 description"><img src={ubication_icon} className="ubication-icon no-select" alt=""></img>Bogotá - Colombia</a>
+                    <span className="lead mb-4 description no-select"><img src={ubication_icon} className="ubication-icon" alt=""></img>Bogotá - Colombia</span>
                     </div>
                     <div className="contact-data">
                     <a href="https://wa.me/+573132528877" className="lead mb-4 description"><img src={whatsapp_icon} className="whatsapp-icon" alt=""></img>+57 313-252-8877</a>
@@ -146,10 +146,10 @@ export function App(){
                         <h1 id="skills" className="display-6 fw-bold text-body-emphasis no-select">SKILLS</h1>
                     </div>
                     <div className="d-flex flex-column flex-md-row p-4 gap-4 py-md-5 align-items-center justify-content-center">
-                        <div className="list-group">
+                        <div className="list-group no-select">
                         <div className="list-group-item list-group-item-action d-flex gap-3 py-3" aria-current="true">
                             <img src={js_icon} alt="twbs" width="32" height="32" className="rounded-circle flex-shrink-0"></img>
-                            <div className="d-flex gap-2 w-100 justify-content-between no-select">
+                            <div className="d-flex gap-2 w-100 justify-content-between">
                                 <div>
                                 <h6 className="mb-0">JavaScript</h6>
                                 <p className="mb-0 opacity-75">Versatile programming language for web development, used in {' '}
@@ -229,7 +229,7 @@ export function App(){
                     <div id="experience" className="text-center">
                             <h1 className="display-6 fw-bold text-body-emphasis">EXPERIENCE</h1>
                     </div>
-                    <div className="acordeon-container">
+                    <div className="acordeon-container no-select">
                         <div className="flex-column flex-md-row gap-4 align-items-center justify-content-center acordeon">
                         <div className="acordion-div">
                             <Accordion>
@@ -285,7 +285,7 @@ export function App(){
                 <div id="education" className="text-center title">
                         <h1 className="display-6 fw-bold text-body-emphasis">EDUCATION</h1>
                 </div>
-                <div className="d-flex flex-column flex-md-row p-4-new gap-4 align-items-center justify-content-center education-title">
+                <div className="d-flex flex-column flex-md-row p-4-new gap-4 align-items-center justify-content-center education-title no-select">
                         <div className="list-group list">
                         <div className="list-group-item list-group-item-action d-flex gap-3 py-3" aria-current="true">
                         <img src={ud_icon} alt="twbs" width="60px" height="60px" className="rounded-circle flex-shrink-0"></img>
