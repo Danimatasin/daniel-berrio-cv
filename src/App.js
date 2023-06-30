@@ -226,7 +226,7 @@ export function App(){
                         </div>
                         
                     </div>
-                    <div id="experience" className="text-center">
+                    <div id="experience" className="text-center no-select">
                             <h1 className="display-6 fw-bold text-body-emphasis">EXPERIENCE</h1>
                     </div>
                     <div className="acordeon-container no-select">
@@ -273,7 +273,7 @@ export function App(){
                         </div>
                     </div>
                 </div>
-                <div id="languages" className="text-center title">
+                <div id="languages" className="text-center title no-select">
                         <h1 className="display-6 fw-bold text-body-emphasis">LANGUAGES</h1>
                 </div>
                 <div className="switch-container">
@@ -283,7 +283,7 @@ export function App(){
                     <BootstrapSwitchButton className="switch" checked={isEnglishActive} onlabel="Spanish (Native)" offlabel="English (B1)" onstyle="warning" offstyle="primary" onChange={handleSwitchChange}/>
                 </div>
                 <div id="education" className="text-center title">
-                        <h1 className="display-6 fw-bold text-body-emphasis">EDUCATION</h1>
+                        <h1 className="display-6 fw-bold text-body-emphasis no-select">EDUCATION</h1>
                 </div>
                 <div className="d-flex flex-column flex-md-row p-4-new gap-4 align-items-center justify-content-center education-title no-select">
                         <div className="list-group list">
@@ -311,7 +311,7 @@ export function App(){
                         </div>
                         
                 </div>
-                <div id="interest" className="text-center title">
+                <div id="interest" className="text-center title no-select">
                         <h1 className="display-6 fw-bold text-body-emphasis">INTEREST PAGES</h1>
                 </div>
                 <Container>
