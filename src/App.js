@@ -1,5 +1,6 @@
 import React, { Fragment, useState, useRef} from 'react';
 import { v4 as uuidv4 } from 'uuid';
+import { differenceInYears } from 'date-fns';
 import { ScrollButton } from './components/ScrollButton';
 import { TodoList } from './components/TodoList';
 import 'bootstrap/dist/css/bootstrap.min.css';
@@ -52,6 +53,15 @@ export function App(){
 
         todoTaskRef.current.value = null;
     }
+
+    function calcularDiferenciaEnAnios(fechaInicial) {
+        return differenceInYears(new Date(), fechaInicial);
+    }
+
+    //Fecha ajustada para no contar el tiempo sin empleo '2017-08-01'
+    const fechaFija = new Date('2016-09-01');
+    const diferenciaEnAnios = calcularDiferenciaEnAnios(fechaFija, new Date());
+
 
     const [expanded, setExpanded] = useState(false);
 
@@ -139,7 +149,7 @@ export function App(){
                     </div>
                     <h2 className="display-7 text-body-emphasis degree no-select">SOFTWARE DEVELOPMENT ENGINEER</h2>
                     <div className="col-lg-6 mx-auto">
-                    <p className="lead mb-4 description no-select">Software development engineer with 6 years of experience. Full-stack developer. Experience in frontend in Angular, React.js, HTML and CSS, backend in Java with Spring Boot, API REST, Unit Test with JUnit. SonarQube. Important knowledge in SQL database management, stored procedures. Git management and knowledge in accounting and banking processes.</p>
+                    <p className="lead mb-4 description no-select">Software development engineer with {diferenciaEnAnios} years of experience. Full-stack developer. Experience in frontend in Angular, React.js, HTML and CSS, backend in Java with Spring Boot, API REST, Unit Test with JUnit. SonarQube. Important knowledge in SQL database management, stored procedures. Git management and knowledge in accounting and banking processes.</p>
                     </div>
                 </div>
                     <div className="text-center">
