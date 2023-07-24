@@ -247,8 +247,14 @@ export function App(){
                                     <Accordion.Header><b>COBISCORP</b></Accordion.Header>
                                     <Accordion.Body>
                                     <div className="d-flex gap-2 w-100 justify-content-between">
-                                        <div>
-                                        <h6 className="mb-0 margen-p">Software Development Engineer</h6>
+                                        <div className="mb-4">
+                                        <h6 className="mb-0 margen-p lead role">Software Development Engineer</h6>
+                                        <h6 className="mb-0 margen-p">Featured Projects:</h6>
+                                        <ul>
+                                        <li className="mb-0 opacity-75 job-description margen-p">Cooperativa 23 de Julio DB Migration</li>
+                                        <li className="mb-0 opacity-75 job-description margen-p">Santander México Bank Web-App Support</li>
+                                        </ul>
+                                        <h6 className="mb-0 margen-p">Role:</h6>
                                         <p className="mb-0 opacity-75 job-description">Full-stack web app development with Frontend in JavaScript using React. Improved Look and feel with HTML and CSS. REST API consumption, Java backend support with Spring Boot. Management and maintenance of databases in SQL Server. Analysis of implementation of banking processes and maintenance of platforms.</p>
                                         </div>
                                         <small className="opacity-50 periodo">(Aug 2021 - Jun 2023)</small>
@@ -259,9 +265,14 @@ export function App(){
                                     <Accordion.Header><b>DXC TECHNOLOGY</b></Accordion.Header>
                                     <Accordion.Body>
                                     <div className="d-flex gap-2 w-100 justify-content-between">
-                                        <div>
-                                        <h6 className="mb-0 margen-p">Software Developer</h6>
-                                        <p className="mb-0 opacity-75 job-description">Development of web applications in Angular 8, HTML, CSS, Java support with Springboot. REST API consumption. Unit tests in JUnit. SQL database management and development of stored procedures.</p>
+                                        <div className="mb-4">
+                                        <h6 className="mb-0 margen-p lead role">Software Developer</h6>
+                                        <h6 className="mb-0 margen-p">Featured Projects:</h6>
+                                        <ul>
+                                        <li className="mb-0 opacity-75 job-description margen-p">Itau Bank Enrolement Web-App Support</li>
+                                        </ul>
+                                        <h6 className="mb-0 margen-p">Role:</h6>
+                                        <p className="mb-0 opacity-75 job-description">Development of web applications in JavaScript with Angular 8, HTML, CSS, Java support with Springboot. REST API consumption. Unit tests in JUnit. Best practices with Sonarqube. SQL database management and development of stored procedures.</p>
                                         </div>
                                         <small className="opacity-50 periodo">(Oct 2020 - Aug 2021)</small>
                                     </div>
@@ -271,8 +282,14 @@ export function App(){
                                     <Accordion.Header><b>DATAPLUS</b></Accordion.Header>
                                     <Accordion.Body>
                                     <div className="d-flex gap-2 w-100 justify-content-between">
-                                        <div>
-                                        <h6 className="mb-0 margen-p">Process Manager</h6>
+                                        <div className="mb-4">
+                                        <h6 className="mb-0 margen-p lead role">Process Manager</h6>
+                                        <h6 className="mb-0 margen-p">Featured Projects:</h6>
+                                        <ul>
+                                        <li className="mb-0 opacity-75 job-description margen-p">Web Design for Alpina campaign</li>
+                                        <li className="mb-0 opacity-75 job-description margen-p">Web Design for Universidad de La Sabana campaign</li>
+                                        </ul>
+                                        <h6 className="mb-0 margen-p">Role:</h6>
                                         <p className="mb-0 opacity-75 job-description">Scripts creation for data capture. Website design with HTML, CSS and Bootstrap. Statistical processing and analysis in SPSS.</p>
                                         </div>
                                         <small className="opacity-50 periodo">(Sep 2016 - Nov 2019)</small>
