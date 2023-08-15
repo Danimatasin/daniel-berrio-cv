@@ -243,7 +243,24 @@ export function App(){
                         <div className="flex-column flex-md-row gap-4 align-items-center justify-content-center acordeon">
                         <div className="acordion-div">
                             <Accordion>
-                                <Accordion.Item eventKey="0">
+                            <Accordion.Item eventKey="0">
+                                <Accordion.Header><b>SCOTIABANK</b></Accordion.Header>
+                                    <Accordion.Body>
+                                    <div className="d-flex gap-2 w-100 justify-content-between">
+                                        <div className="mb-4">
+                                        <h6 className="mb-0 margen-p lead role">Platform Engineer Specialist</h6>
+                                        <h6 className="mb-0 margen-p">Featured Projects:</h6>
+                                        <ul>
+                                        <li className="mb-0 opacity-75 job-description margen-p">ServiceNow Platform Support</li>
+                                        </ul>
+                                        <h6 className="mb-0 margen-p">Role:</h6>
+                                        <p className="mb-0 opacity-75 job-description">Support in ServiceNow for every type of flow and form related to the internal processes of the company.</p>
+                                        </div>
+                                        <small className="opacity-50 periodo">(Aug 2023 - Present)</small>
+                                    </div>
+                                    </Accordion.Body>
+                                </Accordion.Item>
+                                <Accordion.Item eventKey="1">
                                     <Accordion.Header><b>COBISCORP</b></Accordion.Header>
                                     <Accordion.Body>
                                     <div className="d-flex gap-2 w-100 justify-content-between">
@@ -261,7 +278,7 @@ export function App(){
                                     </div>
                                     </Accordion.Body>
                                 </Accordion.Item>
-                                <Accordion.Item eventKey="1">
+                                <Accordion.Item eventKey="2">
                                     <Accordion.Header><b>DXC TECHNOLOGY</b></Accordion.Header>
                                     <Accordion.Body>
                                     <div className="d-flex gap-2 w-100 justify-content-between">
@@ -278,7 +295,7 @@ export function App(){
                                     </div>
                                     </Accordion.Body>
                                 </Accordion.Item>
-                                <Accordion.Item eventKey="2">
+                                <Accordion.Item eventKey="3">
                                     <Accordion.Header><b>DATAPLUS</b></Accordion.Header>
                                     <Accordion.Body>
                                     <div className="d-flex gap-2 w-100 justify-content-between">
@@ -286,8 +303,8 @@ export function App(){
                                         <h6 className="mb-0 margen-p lead role">Process Manager</h6>
                                         <h6 className="mb-0 margen-p">Featured Projects:</h6>
                                         <ul>
-                                        <li className="mb-0 opacity-75 job-description margen-p">Web Design for Alpina campaign</li>
-                                        <li className="mb-0 opacity-75 job-description margen-p">Web Design for Universidad de La Sabana campaign</li>
+                                        <li className="mb-0 opacity-75 job-description margen-p">Web Design for Alpina Campaign</li>
+                                        <li className="mb-0 opacity-75 job-description margen-p">Web Design for Universidad de La Sabana Campaign</li>
                                         </ul>
                                         <h6 className="mb-0 margen-p">Role:</h6>
                                         <p className="mb-0 opacity-75 job-description">Scripts creation for data capture. Website design with HTML, CSS and Bootstrap. Statistical processing and analysis in SPSS.</p>
